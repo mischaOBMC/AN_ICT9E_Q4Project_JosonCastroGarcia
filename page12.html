@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+        .navbar{
+            font-family: Roboto, sans-serif;
+            padding: 7px;
+            font-size: 16px;
+            background-color: green;
+        }
+
+        .navbar-brand{
+            color: white;
+        }
+
+        .navbar-custom{
+            background-color: lawngreen;
+        }
+        }
+        .header{
+            text-align: center;
+            margin-top: 40px;
+            font-family: Trend Sans One, sans-serif;
+            font-size: 20px;
+        }
+        .header h1{
+            font-size: 50px;
+        }
+        .carousel{
+            height: 500px;
+            width: 1000px;
+            max-width: 1250px;
+        }
+        .carousel-inner img {
+            width: 100%; 
+            height: 625px; 
+            object-fit: cover;
+            border-radius: 10px; 
+            border: 4px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-caption{
+            color: whitesmoke;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+        }
+        .carousel-container{
+            display: flex;
+            justify-content: center;   
+            align-items: center;      
+            padding: 10px;             
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo copy.png" alt="Logo" width="25" height="30" class="me-2"><b>
+                POTATO CORNER</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="padding:2px">
+                <ul class="navbar-nav mx-auto" style="padding-left: 50px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page12.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html" style="color: white;">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about3.html"style="color: white;">About</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="submit.html">SUBMIT RECIPE</a>  
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="header">
+        <h1 style="color: #ff8519;letter-spacing: 5px;"><b>POTATO CORNER</b></h1>
+        <p style="color: #ff8519; font-family: Trebuchet MS, sans-serif;">“World's Best Flavored French Fries"</p>
+        </div>
+        <div class="carousel-container">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="bbq.jpg" class="d-block w-100" alt="Barbeque">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>BARBEQUE</h5>
+                        <p> Enjoy a smoky, savoury bite with every piece of fry. Our signature BBQ flavour is definitely an all-time favourite that Potato Corner lovers grew up craving for.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="cheese.jpg" class="d-block w-100" alt="Cheese">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>CHEESE</h5>
+                        <p>It’s no secret our OG cheese flavour is a classic. Potato Corner’s cheese flavour is a feast for the eye and your tastebuds that will make you enjoy the most of it—even what’s left on your fingertips!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="sourcream.jpg" class="d-block w-100" alt="Sour Cream">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SOUR CREAM</h5>
+                        <p>It’s sour, it’s herby and it blends perfectly in your mouth. Enjoy the zesty flavour of sour cream with your favourite Potato Corner fries.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
