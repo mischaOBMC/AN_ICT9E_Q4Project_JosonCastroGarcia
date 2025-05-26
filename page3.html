@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jem's portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+    @font-face{
+        font-family: ROMANTIC;
+        src: url(ROMANTIC.ttf);
+    }
+    @font-face{
+        font-family: birds;
+        src: url(birds.ttf);
+    }
+     @font-face{
+        font-family: bella;
+        src: url(bella.ttf);
+    }
+     @font-face{
+        font-family: Chillen;
+        src: url(Chillen.ttf);
+    }
+     @font-face{
+        font-family: Tempting;
+        src: url(Tempting.ttf);
+    }
+    @font-face{
+        font-family: rsom;
+        src: url(rsom.ttf);
+    }
+    body{
+        background-color: #f5f2ee;
+    }
+    p{
+        margin-top: -15px;
+        color: #5c5842;
+        font-size: 20px;
+    }
+    .img1{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 8px solid #5c5842;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin: auto;
+        transition: transform 0.3s ease;
+        border: 8px double #d18caa;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .navbar-custom{
+        background-color: #5c5842;
+    }
+    .navbar-brand{
+        font-family: bella;
+        font-size: 50px;
+        color: #a8a687;
+    }
+    .nav-link{
+        font-family: Chillen;
+        font-size: 20px;
+        margin-left: 3px;
+        margin-top: 15px;
+    }
+    .navbar-custom,
+    .navbar-custom, .nav-link{
+        color: #a8a687  ;
+
+    }
+    .nav-link:hover{
+        color: #5c5842 ;
+    }
+    .navbar-brand:hover{
+        color: #a8a687 ;
+    }
+    .banner{
+        margin-right: 200px;
+        height: 100px;
+        width: 200px;
+    }
+    .search, .search2{
+        margin-top: 19px;
+    }
+    .search{
+        background-color: #f1efd4;
+        color: #868468 ;
+        border-color: #a8a687;
+        font-family: bella;
+    }
+    .search2{
+        background-color: #868468 ;
+        border-color: #a8a687;
+        color: #a8a687;
+    }
+
+    .portfoliocontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 900px;
+      background-color: #f3f2ef;
+      padding: 30px;
+      margin-top: 0px;
+    }
+
+    .imagepart {
+      flex: 1;
+    }
+
+    .imagepart img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    h1{
+        text-align: center;
+        padding: 5px;
+        background-color: #5c5842;
+        color: #a8a687;
+        font-family: rsom;
+    }
+    h5{
+      color: #5c5842; 
+      font-size: 50px; 
+       font-family: rsom;
+       text-align: center;
+    }
+    .textpart {
+      flex: 1;
+      padding: 40px;
+      font-family: rsom;
+    }
+     .textpart h3 {
+        font-size: 120px;
+        font-family: birds;
+        color: #5c5842;
+     }
+    .textpart h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #5c5842;
+      font-family: rsom;
+
+    }
+
+    .textpart p {
+      font-size: 15px;
+      color: #5c5842;
+      font-family: Chillen;
+    }
+    h6{
+      font-size: 25px;
+      color: #868468;
+      font-family: ROMANTIC;  
+    }
+    .me {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      transition: transform 0.2s ease;
+    }
+
+    .mecard {
+      background-color: #5c5842;
+      color: white;
+      border-radius: 20px;
+      padding: 80px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .me :hover{
+        transform: translateY(-15px);
+    }
+
+    .mecard p {
+      font-size: 15px;
+      line-height: 1.5;
+      transition: transform 0.2s ease;
+      color: #a8a687;
+      font-family: Chillen;
+    }
+       .jam-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 60px;
+      padding: 5px;
+      max-width: 1200px;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+        .jam-image-container{
+        width: 500px;
+        height: 400px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 8px solid #868468;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin: auto;
+        transition: transform 0.3s ease;
+        border: 8px double #a8a687;
+        margin-left: -120px;
+        cursor: pointer;
+    }
+    .jam-image-container:hover{
+      transform: translateY(-15px);
+    }
+
+    .jam-image-container img {
+      width: 100%;
+      display: block;
+    }
+
+
+    .jam {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .name {
+      font-family: bella;
+      font-size: 25px;
+      color: #a8a687;
+      margin-bottom: 8px;
+    }
+
+    .jam-img{
+      height: 450px;
+      width: 500px;
+    }
+       .sub, h4{
+        background-color: #f5f2ee;
+        color: #868468 ;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 30px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-family: bella;
+        text-align: center;
+
+        }
+        .sub:hover{
+            color: #868468;
+        }
+        .buttonz{
+            display: flex;
+            justify-content: center;
+            gap: 20px; 
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+    footer{
+        text-align: center;
+        background-color: #868468;
+        padding: 5px;
+        color: #a8a687;
+        margin-top: 0px;
+        font-family: Chillen;
+    }
+    </style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand">𐦂𖨆𐀪 student jam   ᝰ.ᐟ</i></b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">HOME</a>  
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="page8.html" target="_blank">Q1 ㅤ•</a>  
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="page9.html" target="_blank">Q2 ㅤ•</a>  
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="page10.html" target="_blank">Q3 ㅤ•</a>  
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="index.html" target="_blank">Q4</a>  
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="page6.html">WHAT'S NEXT?</a>  
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="page7.html">RATE US</a>  
+                    </li>
+                    <li class="nav-item">
+                     <input type="search" name="search" placeholder="search..." class="search">
+                    </li>
+                    <li class="nav-item">
+                    <button class="search2">⌕</button>
+                 </li>
+                </ul>
+                
+            </div>
+        </div>
+
+    </nav>
+
+<div class="main-content" >
+    <img src="banner.jpg" width="1470" height="400">
+</div>
+<br>
+<p>_______________________________________________________________________________________________________________________________________________</p>
+<h1>portfolio</h1>
+<p>_______________________________________________________________________________________________________________________________________________</p>
+<div class="portfoliocontainer">
+  <div class="imagepart">
+    <img src="J1.jpg"/>
+  </div>
+  <div class="textpart">
+    <h2>Dear viewers, I am</h2>
+    <h3>Jeremy Castro</h3>
+    <p>This is a portfolio showcasing my ICT projects from the first to the fourth quarter at my ninth grade at O.B. Montessori Angeles Campus. From basic HTML pages to more advanced multimedia and coding tasks, this collection reflects my growth in technology. The projects demonstrate creativity, problem-solving, and a solid understanding of ICT concepts. </p>
+  </div>
+</div>
+<h5>About Me</h5>
+<div class="me">
+  <div class="mecard">
+    <h6>name & age</h6>
+    <br>
+    <p>shaniel jeremy lapuz castro to the government, jeremy to many, jem to some, jabilee to kevin, a 2010 baby turning 15 on the fifteenth of september</p>
+  </div>
+  <div class="mecard">
+    <h6>school</h6>
+    <br>
+    <p>been a student in OBMC Angeles Campus since seventh grade, just finished ninth grade (SUMMER!) as a student from section emerald</p>
+  </div>
+  <div class="mecard">
+    <h6>favorites</h6>
+    <br>
+    <p>love, love, love listening to music, cooking, eating, and hanging out with friends </p>
+  </div>
+  <div class="mecard">
+    <h6>interests</h6>
+    <br>
+    <p>things that peak my interests are filipino subject, volleyball</p>
+  </div>
+</div>
+<h5>My Project Archive</h5>
+ <div class="jam-grid">
+    <div class="jam-card">
+      <div class="jam-image-container">
+        <a href="page8.html" target="_blank"><img src="Q1J.jpg" class="jam-img"></a>
+      </div>
+      <div class="jam">
+        <div class="name">Quarter One</div>
+      </div>
+    </div>
+
+    <div class="jam-card">
+      <div class="jam-image-container">
+        <a href="page9.html" target="_blank"><img src="Q2J.jpg" class="jam-img"></a>
+      </div>
+      <div class="jam">
+        <div class="name">Quarter Two</div>
+      </div>
+    </div>
+
+    <div class="jam-card">
+      <div class="jam-image-container">
+        <a href="page10.html" target="_blank"><img src="Q3J.jpg" class="jam-img"></a>
+      </div>
+      <div class="jam">
+        <div class="name">Quarter Three</div>
+      </div>
+    </div>
+
+ <div class="jam-card">
+      <div class="jam-image-container">
+        <a href="index.html" target="_blank"><img src="Q4J.jpg" class="jam-img"></a>
+      </div>
+      <div class="jam">
+        <div class="name">Quarter Four</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  </div>
+<div class="buttonz">
+<a href="index.html"><h4><button class="sub">← Back to Home</button></h4></a> 
+<a href="page2.html"><h4><button class="sub"> Go to Gallery →</button></h4></a> 
+</div>
+
+ <footer>
+        &copy; 2025 BOOM TARATTARAT ㅤ l ㅤOBMC Angeles Campus ㅤ l ㅤJeremy Castro • Alexa Garcia • Mischa Joson ㅤ l ㅤ All Rights Reserved.♡
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

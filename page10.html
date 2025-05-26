@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro | Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #000000;
+        }
+        .navbar-custom, .navbar-brand, .navbar-custom, .nav-link {
+            color: whitesmoke;
+        }
+        .link1:hover {
+            color: white;
+            border-bottom: white 1px solid;
+            padding: auto;
+        }
+
+        .link1 {
+            font-family: Work Sans;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .link2 {
+            font-family: Work Sans;
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+        .logo {
+            margin-top: 5px;
+            height: 80px;
+            width: 80px;
+        }
+        .brand {
+            font-family: Josefin Sans;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .brand:hover {
+            color: white;
+        }
+        .searchbar {
+            margin-left: 5px;
+            font-family: Josefin Sans;
+        }
+        .container2 {
+            position: relative;
+            
+        }
+        .background {
+            height: 500px;
+            width: 1500px;
+            object-fit: cover;
+        }
+        .buttons{
+            font-weight: 600;
+            font-family: Josefin Sans;
+            display: inline-block;
+            margin: 15px;
+            padding-left: 110px;
+            padding-right: 110px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        .buttons:hover{
+            padding-left: 112px;
+            padding-right: 112px;
+            padding-top: 42px;
+            padding-bottom: 42px;
+        }
+        .buttons-container{
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            right: 50%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .banner img{
+            border-bottom: 100px solid rgb(241, 241, 242); 
+            display: block;
+            margin: 0 auto;
+            
+        
+        }
+        .main{
+            border-top: 1px solid black;
+            margin: 0 auto;
+            max-width: 1000px;
+            margin-top: 70px;
+            column-gap: 0;
+        }
+        .guards{
+            height: 300px;
+            width: 500px;
+        }
+        .footer{
+            margin-top: 10px;
+            border-top: 1px solid black;
+        }
+        .footer1{
+            margin-top: 10px;
+            border-top: 1px solid black;
+            border-width: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">          
+             <img src="logo3.png" class="logo">
+             <a href="index.html" class="navbar-brand brand">METRO</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link link1" href="index.html">Home</a> 
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link link1" href="schedule.html">Train Schedule</a> 
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link link1" href="terms.html">Terms and Conditions</a> 
+                     </li> 
+                </ul>
+            </div>
+            <input type="text" placeholder="Search" class="searchbar">
+        </div>
+    </nav>
+    <div class="container2">
+        <div class="banner">
+        <img src="starry-night-1093721_960_720.jpg" class="background"><br>
+        </div>
+        <div class="buttons-container">
+            <a href="book.html">
+            <button class="buttons">Book</button>
+            </a>
+            <a href="schedule.html">
+            <button class="buttons">Schedule</button>
+            </a>
+            <a href="about2.html">
+            <button class="buttons">About</button>
+            </a>
+            <a href="terms.html">
+            <button class="buttons">Policies</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="main text-align-center align-items-center display-flex justify-content-center ">
+        <div class="row align-items-center bg-light rounded p-4 shadow-sm">
+            <div class="col-md-5">
+                <img src="guards.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col-md-7">
+                <h4 class="fw-bold">Everyone Deserves a Safe Metro</h4>
+                <p>
+                    Metro is deploying more security officers, ensuring people on the system are there to ride, 
+                    and better addressing issues of untreated mental illness and drug abuse.
+                </p>
+                <button class="btn btn-dark rounded-pill">More</button>
+            </div>
+        </div>
+        <div class="row align-items-center bg-light rounded p-4 shadow-sm mt-5">
+            <div class="col-md-7">
+                <h4 class="fw-bold">Students Ride Free with GoPass</h4>
+                <p>
+                    Free your inspiration. Get your GoPass today.
+                </p>
+                <button class="btn btn-dark rounded-pill">More</button>
+            </div>
+            <div class="col-md-5">
+                <img src="college.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="row align-items-center bg-light rounded p-4 shadow-sm mt-5">
+            <div class="col-md-5">
+                <img src="241797360_184475003797886_985006696020361302_n.jpg.jpeg" class="img-fluid rounded">
+            </div>
+            <div class="col-md-7">
+                <h4 class="fw-bold">New Tracks and Trains</h4>
+                <p>
+                    Metro is constructing more tracks and releasing new trains for everyone.
+                </p>
+                <button class="btn btn-dark rounded-pill">More</button>
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+     </div>
+     <div class="footer1">
+
+     </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
