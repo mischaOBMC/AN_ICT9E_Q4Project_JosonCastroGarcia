@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro | Terms and Conditions</title>
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #000000;
+        }
+        .navbar-custom, .navbar-brand, .navbar-custom, .nav-link {
+            color: whitesmoke;
+        }
+        .link1:hover {
+            color: white;
+            border-bottom: white 1px solid;
+            padding: auto;
+        }
+
+        .link1 {
+            font-family: Work Sans;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .link2 {
+            font-family: Work Sans;
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+        .logo {
+            margin-top: 5px;
+            height: 80px;
+            width: 80px;
+        }
+        .brand {
+            font-family: Josefin Sans;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .brand:hover {
+            color: white;
+        }
+        .searchbar {
+            margin-left: 5px;
+            font-family: Josefin Sans;
+        }
+        .container2 {
+            position: relative;
+            
+        }
+        .background {
+            height: 500px;
+            width: 1500px;
+            object-fit: cover;
+        }
+        .buttons{
+            font-weight: 600;
+            font-family: Josefin Sans;
+            display: inline-block;
+            margin: 15px;
+            padding-left: 110px;
+            padding-right: 110px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+
+        .buttons:hover{
+            padding-left: 112px;
+            padding-right: 112px;
+            padding-top: 42px;
+            padding-bottom: 42px;
+        }
+
+        .buttons-container{
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            right: 50%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .container1{
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+        .footer1{
+            margin-top: 10px;
+            border-top: 1px solid black;
+            border-width: 70px;
+        }
+        .bordershizz{
+            border-bottom: solid 1px black;
+        }
+        .buttonsshizz{
+            padding: 20px;
+            margin: 200px;
+            border: #000000 2px solid;
+        }
+        .thingy{
+            text-align: center;
+        }
+        .dropdown{
+            font-family: Josefin Sans;
+            padding: 20px
+        }
+        .dropdownlabel{
+            font-family: Josefin Sans;
+        }
+        .calculates{
+            border: none;
+            font-family: Josefin Sans;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+        }
+        .text{
+            font-family: Josefin Sans;
+            background-color: gainsboro;
+            padding: 50px;
+            font-size: 30px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">          
+             <img src="logo3.png" class="logo">
+             <a href="index.html" class="navbar-brand brand">METRO</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                   <li class="nav-item">
+                      <a class="nav-link link1" href="page10.html">Home</a> 
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link link1" href="schedule.html">Train Schedule</a> 
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link link1" href="terms.html">Terms and Conditions</a> 
+                   </li> 
+                </ul>
+            </div>
+            <input type="text" placeholder="Search" class="searchbar">
+        </div>
+    </nav>
+    <div class="row thingy">
+        <div class="col">
+            <img src="Metro Route.png" style="width: 700px; height: 700px; margin: 200px; border: #000000 solid 2px; text-align: center;" >
+        </div>
+    <div class="col buttonsshizz">
+        <h2 style="font-family: Josefin Sans;">Book your Tickets</h1>
+        <label for="fromStation" class="dropdownlabel">From: </label><br>
+        <select id="fromStation" class="dropdown">
+            <option value="North Avenue">North Avenue</option>
+            <option value="Quezon Avenue">Quezon Avenue</option>
+            <option value="Kamuning">Kamuning</option>
+            <option value="Cubao">Cubao</option>
+            <option value="Santolan">Santolan</option>
+            <option value="Ortigas">Ortigas</option>
+            <option value="Shaw Boulevard">Shaw Boulevard</option>
+            <option value="Boni">Boni</option>
+            <option value="Guadalupe">Guadalupe</option>
+            <option value="Ayala">Ayala</option>
+            <option value="Magallanes">Magallanes</option>
+            <option value="Nichols">Buendia</option>
+            <option value="Taft Avenue">Taft Avenue</option>
+        </select>
+    
+        <br>
+    
+        <label for="toStation" class="dropdownlabel">To: </label><br>
+        <select id="toStation" class="dropdown">
+            <option value="North Avenue">North Avenue</option>
+            <option value="Quezon Avenue">Quezon Avenue</option>
+            <option value="Kamuning">Kamuning</option>
+            <option value="Cubao">Cubao</option>
+            <option value="Santolan">Santolan</option>
+            <option value="Ortigas">Ortigas</option>
+            <option value="Shaw Boulevard">Shaw Boulevard</option>
+            <option value="Boni">Boni</option>
+            <option value="Guadalupe">Guadalupe</option>
+            <option value="Ayala">Ayala</option>
+            <option value="Magallanes">Magallanes</option>
+            <option value="Nichols">Buendia</option>
+            <option value="Taft Avenue">Taft Avenue</option>
+        </select>
+    
+        <br><br>
+    
+        <button onclick="calculatePrice()" class="calculates">Calculate Price</button>
+        <br><br>
+    
+        <p class="text">Ticket Price: <span id="ticketPrice">₱0.00</span></p>
+        <button onclick="applyDiscount()" class="calculates">Apply 20% Discount</button>
+        <br><br>
+    
+        <p class="text">Price after Discount: <span id="discountPrice">₱0.00</span></p>
+        </div>
+    </div>
+        <script>
+
+const stations = [
+    "North Avenue", "Quezon Avenue", "Kamuning", "Cubao", "Santolan",
+    "Ortigas", "Shaw Boulevard", "Boni", "Guadalupe", "Ayala",
+    "Magallanes", "Nichols", "Taft Avenue"
+];
+
+
+const baseFare = 25;
+const fareIncrement = 5;
+
+function calculatePrice() {
+    const fromStation = document.getElementById("fromStation").value;
+    const toStation = document.getElementById("toStation").value;
+
+    const fromIndex = stations.indexOf(fromStation);
+    const toIndex = stations.indexOf(toStation);
+
+    if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex || fromIndex > toIndex) {
+        alert("Invalid station selection.");
+        return;
+    }
+
+    const numStops = toIndex - fromIndex;
+    
+    const price = baseFare + (numStops * fareIncrement);
+
+    document.getElementById("ticketPrice").textContent = `₱${price.toFixed(2)}`;
+    document.getElementById("discountPrice").textContent = `₱${price.toFixed(2)}`;
+}
+
+function applyDiscount() {
+    const originalPrice = parseFloat(document.getElementById("ticketPrice").textContent.replace("₱", ""));
+    if (originalPrice === 0) {
+        alert("Please calculate the price first.");
+        return;
+    }
+    const discountedPrice = originalPrice * 0.80;
+    document.getElementById("discountPrice").textContent = `₱${discountedPrice.toFixed(2)}`;
+}
+
+        </script>
+    <div class="footer1">
+
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
